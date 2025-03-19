@@ -1,0 +1,40 @@
+TUTORIAL
+- https://chatgpt.com/c/67db09b4-d00c-8010-aece-290ec881347d
+
+TEKNOLOGI
+- PHP 8.2.12
+- Laravel 12.3.0
+- MariaDB 10.4.32 
+- Node.js 21.7.3
+- Livewire 2.0.6 (TailwindCSS 4.0.7)
+- Tailadmin 2.0.1 (TailwindCSS 4.0.0)
+
+DEVELOPMENT
+1. Terminal: laravel new jetstream-tailadmin
+2. Terminal: cd jetstream-tailadmin
+3. PHPMyAdmin: Buat tabel 'jetstream-tailadmin'
+4. Terminal: php artisan migrate
+5. Terminal: php artisan serve
+
+6. Terminal: git init
+7. Terminal: git add .
+8. Terminal: git commit -m "Pertamaz"
+9. Terminal: git branch -M main
+10. Terminal: git remote add origin https://github.com/okakzai/jetstream-tailadmin.git
+11. Terminal: git pull origin main --rebase
+12. Terminal: git push -u origin main
+
+4. VSCode: Edit file '.env' terkait koneksi database
+5. Terminal: composer require laravel/jetstream
+6. Terminal: php artisan jetstream:install livewire
+7. Terminal: php artisan migrate
+8. Terminal: npm install && npm run build
+9. Terminal: php artisan serve
+
+
+MENGHAPUS CACHE
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear
+php artisan route:clear
+php artisan optimize:clear

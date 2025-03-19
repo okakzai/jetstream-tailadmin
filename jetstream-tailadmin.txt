@@ -15,7 +15,6 @@ DEVELOPMENT
 3. PHPMyAdmin: Buat tabel 'jetstream-tailadmin'
 4. Terminal: php artisan migrate
 5. Terminal: php artisan serve
-
 6. Terminal: git init
 7. Terminal: git add .
 8. Terminal: git commit -m "Pertamaz"

@@ -37,6 +37,10 @@ Route::middleware([
     Route::get('/page/blank', function () {
         return view('tailadmin.page.blank');
     })->name('page.blank');
+
+    Route::get('/page/404', function () {
+        return view('tailadmin.page.404');
+    })->name('page.404');
 });
 
 Route::middleware(['auth'])->group(function () {

@@ -383,7 +383,7 @@
                 </li>
                 <li>
                   <a
-                    href="404.html"
+                    href="{{url('/page/404')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'page404' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

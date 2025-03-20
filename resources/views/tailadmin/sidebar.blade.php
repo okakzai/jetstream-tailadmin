@@ -598,7 +598,7 @@
                 </li>
                 <li>
                   <a
-                    href="buttons.html"
+                    href="{{url('/ui/button')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'buttons' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

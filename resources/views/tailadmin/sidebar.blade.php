@@ -497,7 +497,7 @@
                 </li>
                 <li>
                   <a
-                    href="bar-chart.html"
+                    href="{{url('/chart/bar')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'barChart' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

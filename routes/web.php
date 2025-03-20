@@ -49,6 +49,10 @@ Route::middleware([
     Route::get('/chart/line', function () {
         return view('tailadmin.chart.line');
     })->name('chart.line');
+
+    Route::get('/chart/bar', function () {
+        return view('tailadmin.chart.bar');
+    })->name('chart.bar');
 });
 
 Route::middleware(['auth'])->group(function () {

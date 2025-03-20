@@ -226,7 +226,7 @@
               >
                 <li>
                   <a
-                    href="form-elements.html"
+                    href="{{url('/form/element')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'formElements' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

@@ -25,6 +25,10 @@ Route::middleware([
     Route::get('/profile', function () {
         return view('tailadmin.profile');
     })->name('profile');
+
+    Route::get('/form/element', function () {
+        return view('tailadmin.form.element');
+    })->name('form.element');
 });
 
 Route::middleware(['auth'])->group(function () {

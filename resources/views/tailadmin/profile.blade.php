@@ -1,6 +1,6 @@
 @extends('layouts.tailadmin')
 
-@section('title', 'Profile')
+@section('title', 'User Profile')
 @section('data', "{ page: 'profile', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false, 'isProfileInfoModal': false, 'isProfileAddressModal': false  }")
 
 @section('content')
@@ -9,7 +9,7 @@
     <div
         class="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto"
     >
-    @include('tailadmin.topbar')
+      @include('tailadmin.topbar')
 
         <!-- ===== Main Content Start ===== -->
         <main>
@@ -405,9 +405,11 @@
           </div>
         </main>
         <!-- ===== Main Content End ===== -->
+    
     </div>
     <!-- ===== Content Area End ===== -->
-     <!-- BEGIN MODAL -->
+    
+    <!-- BEGIN MODAL -->
     <div
   x-show="isProfileInfoModal"
   class="fixed inset-0 flex items-center justify-center p-5 overflow-y-auto z-99999"
@@ -603,8 +605,8 @@
       </div>
     </form>
   </div>
-</div>
-<div
+    </div>
+    <div
   x-show="isProfileAddressModal"
   class="fixed inset-0 flex items-center justify-center p-5 overflow-y-auto z-99999"
 >
@@ -718,8 +720,8 @@
       </div>
     </form>
   </div>
-</div>
-<!-- END MODAL -->
+    </div>
+    <!-- END MODAL -->
 @endsection
 
 @push('styles')

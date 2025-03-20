@@ -607,7 +607,7 @@
                 </li>
                 <li>
                   <a
-                    href="images.html"
+                    href="{{url('/ui/image')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'images' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

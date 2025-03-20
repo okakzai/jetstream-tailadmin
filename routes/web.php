@@ -57,6 +57,10 @@ Route::middleware([
     Route::get('/ui/alert', function () {
         return view('tailadmin.ui.alert');
     })->name('ui.alert');
+
+    Route::get('/ui/avatar', function () {
+        return view('tailadmin.ui.avatar');
+    })->name('ui.avatar');
 });
 
 Route::middleware(['auth'])->group(function () {

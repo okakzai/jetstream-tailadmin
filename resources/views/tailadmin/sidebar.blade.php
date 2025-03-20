@@ -580,7 +580,7 @@
                 </li>
                 <li>
                   <a
-                    href="avatars.html"
+                    href="{{url('/ui/avatar')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'avatars' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

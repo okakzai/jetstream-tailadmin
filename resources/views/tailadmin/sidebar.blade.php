@@ -616,7 +616,7 @@
                 </li>
                 <li>
                   <a
-                    href="videos.html"
+                    href="{{url('/ui/video')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'videos' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

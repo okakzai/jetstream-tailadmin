@@ -5,6 +5,10 @@ use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
 
+Route::fallback(function () {
+    return response()->view('tailadmin.page.404', [], 404);
+});
+
 Route::get('/', function () {
     return view('welcome');
 })->name('home');

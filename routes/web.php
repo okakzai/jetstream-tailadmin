@@ -45,6 +45,10 @@ Route::middleware([
     Route::get('/page/404', function () {
         return view('tailadmin.page.404');
     })->name('page.404');
+
+    Route::get('/chart/line', function () {
+        return view('tailadmin.chart.line');
+    })->name('chart.line');
 });
 
 Route::middleware(['auth'])->group(function () {

@@ -433,10 +433,10 @@
               href="#"
               @click.prevent="selected = (selected === 'Charts' ? '':'Charts')"
               class="menu-item group"
-              :class="(selected === 'Charts') || (page === 'lineChart' || page === 'barChart' || page === 'pieChart') ? 'menu-item-active' : 'menu-item-inactive'"
+              :class="(selected === 'Charts') && (page === 'lineChart' || page === 'barChart' || page === 'pieChart') ? 'menu-item-active' : 'menu-item-inactive'"
             >
               <svg
-                :class="(selected === 'Charts') || (page === 'lineChart' || page === 'barChart' || page === 'pieChart') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
+                :class="(selected === 'Charts') && (page === 'lineChart' || page === 'barChart' || page === 'pieChart') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -488,7 +488,7 @@
               >
                 <li>
                   <a
-                    href="line-chart.html"
+                    href="{{url('/chart/line')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'lineChart' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

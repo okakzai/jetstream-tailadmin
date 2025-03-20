@@ -53,6 +53,10 @@ Route::middleware([
     Route::get('/chart/bar', function () {
         return view('tailadmin.chart.bar');
     })->name('chart.bar');
+
+    Route::get('/ui/alert', function () {
+        return view('tailadmin.ui.alert');
+    })->name('ui.alert');
 });
 
 Route::middleware(['auth'])->group(function () {

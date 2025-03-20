@@ -33,6 +33,10 @@ Route::middleware([
     Route::get('/table/basic', function () {
         return view('tailadmin.table.basic');
     })->name('table.basic');
+
+    Route::get('/page/blank', function () {
+        return view('tailadmin.page.blank');
+    })->name('page.blank');
 });
 
 Route::middleware(['auth'])->group(function () {

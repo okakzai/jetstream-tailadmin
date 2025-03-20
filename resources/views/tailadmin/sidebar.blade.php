@@ -374,7 +374,7 @@
               >
                 <li>
                   <a
-                    href="blank.html"
+                    href="{{url('/page/blank')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'blank' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

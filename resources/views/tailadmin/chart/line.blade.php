@@ -1,4 +1,4 @@
-@extends('layouts.tailadmin')
+@extends('layouts.tailadmin.app')
 
 @section('title', 'Line Chart')
 @section('data', "{ page: 'lineChart', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }")

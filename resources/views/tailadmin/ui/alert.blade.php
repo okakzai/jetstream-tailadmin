@@ -1,4 +1,4 @@
-@extends('layouts.tailadmin')
+@extends('layouts.tailadmin.app')
 
 @section('title', 'Alerts')
 @section('data', "{ page: 'alerts', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }")

@@ -1,4 +1,4 @@
-@extends('layouts.tailadmin')
+@extends('layouts.tailadmin.app')
 
 @section('title', 'User Profile')
 @section('data', "{ page: 'profile', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false, 'isProfileInfoModal': false, 'isProfileAddressModal': false  }")

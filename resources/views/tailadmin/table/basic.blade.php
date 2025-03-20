@@ -1,4 +1,4 @@
-@extends('layouts.tailadmin')
+@extends('layouts.tailadmin.app')
 
 @section('title', 'Basic Tables')
 @section('data', "{ page: 'basicTables', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }")

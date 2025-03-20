@@ -1,4 +1,4 @@
-@extends('layouts.error')
+@extends('layouts.tailadmin.error')
 
 @section('title', '404 Error Page')
 @section('data', "{ page: 'page404', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }")

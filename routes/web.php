@@ -77,6 +77,10 @@ Route::middleware([
     Route::get('/ui/video', function () {
         return view('tailadmin.ui.video');
     })->name('ui.video');
+
+    Route::get('/auth/signin', function () {
+        return view('tailadmin.auth.signin');
+    })->name('auth.signin');
 });
 
 Route::middleware(['auth'])->group(function () {

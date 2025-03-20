@@ -35,5 +35,5 @@ ENKRIPSI .ENV PRODUCTION
 openssl enc -aes-256-cbc -pbkdf2 -salt -in .env.production -out .env.enc -pass pass:volisore29
 
 MENGHAPUS CACHE
-php artisan config:clear
+php artisan optimize:clear
 php artisan config:cache

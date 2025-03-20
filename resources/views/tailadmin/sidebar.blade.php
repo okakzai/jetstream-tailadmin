@@ -690,7 +690,7 @@
               >
                 <li>
                   <a
-                    href="signin.html"
+                    href="{{url('/auth/signin')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'signin' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

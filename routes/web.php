@@ -81,6 +81,10 @@ Route::middleware([
     Route::get('/auth/signin', function () {
         return view('tailadmin.auth.signin');
     })->name('auth.signin');
+
+    Route::get('/auth/signup', function () {
+        return view('tailadmup.auth.signup');
+    })->name('auth.signup');
 });
 
 Route::middleware(['auth'])->group(function () {

@@ -4,7 +4,7 @@
 @section('data', "{ page: 'comingSoon', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }")
 
 @section('content')
-<div
+  <div
         class="relative flex flex-col justify-center w-full h-screen dark:bg-gray-900 sm:p-0 lg:flex-row"
       >
         <!-- Form -->
@@ -241,7 +241,7 @@
                   >
                     Don't have an account?
                     <a
-                      href="/signup.html"
+                      href="{{ url('/auth/signup') }}"
                       class="text-brand-500 hover:text-brand-600 dark:text-brand-400"
                       >Sign Up</a
                     >
@@ -267,7 +267,7 @@
 </div>
 
             <div class="flex flex-col items-center max-w-xs">
-              <a href="index.html" class="block mb-4">
+              <a href="{{url('/')}}" class="block mb-4">
                 <img src="{{asset('logo.png')}}" alt="Logo" />
               </a>
               <p class="text-center text-gray-400 dark:text-white/60">
@@ -312,7 +312,7 @@
             </svg>
           </button>
         </div>
-      </div>
+  </div>
 @endsection
 
 @push('styles')

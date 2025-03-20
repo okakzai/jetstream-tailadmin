@@ -699,7 +699,7 @@
                 </li>
                 <li>
                   <a
-                    href="signup.html"
+                    href="{{url('/auth/signup')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'signup' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

@@ -100,7 +100,7 @@
           <!-- Menu Item Calendar -->
           <li>
             <a
-              href="calendar.html"
+              href="{{url('/calendar')}}"
               @click="selected = (selected === 'Calendar' ? '':'Calendar')"
               class="menu-item group"
               :class=" (selected === 'Calendar') && (page === 'calendar') ? 'menu-item-active' : 'menu-item-inactive'"

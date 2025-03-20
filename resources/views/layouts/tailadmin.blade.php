@@ -10,7 +10,7 @@
     @stack('styles')
 </head>
 <body
-    x-data="{ page: 'dashboard', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
+    x-data="@yield('data', "{ page: 'dashboard', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }")"
     x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
@@ -32,14 +32,7 @@
         
   <!-- ===== Page Wrapper Start ===== -->
   <div class="flex h-screen overflow-hidden">
-    @include('tailadmin.sidebar')
-    <!-- ===== Content Area Start ===== -->
-    <div
-        class="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto"
-    >
-        @yield('content')
-    </div>
-    <!-- ===== Content Area End ===== -->
+    @yield('content')
   </div>
   <!-- ===== Page Wrapper End ===== -->
 

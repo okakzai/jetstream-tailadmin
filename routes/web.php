@@ -83,7 +83,7 @@ Route::middleware([
     })->name('auth.signin');
 
     Route::get('/auth/signup', function () {
-        return view('tailadmup.auth.signup');
+        return view('tailadmin.auth.signup');
     })->name('auth.signup');
 });
 

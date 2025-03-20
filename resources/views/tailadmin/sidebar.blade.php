@@ -300,7 +300,7 @@
               >
                 <li>
                   <a
-                    href="basic-tables.html"
+                    href="{{url('/table/basic')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'basicTables' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

@@ -21,6 +21,10 @@ Route::middleware([
     Route::get('/calendar', function () {
         return view('tailadmin.calendar');
     })->name('calendar');
+
+    Route::get('/profile', function () {
+        return view('tailadmin.profile');
+    })->name('profile');
 });
 
 Route::middleware(['auth'])->group(function () {

@@ -35,6 +35,7 @@
     @yield('content')
   </div>
   <!-- ===== Page Wrapper End ===== -->
+   
 
     <script defer src="{{ asset('template/tailadmin/bundle.js') }}"></script>
     {{-- Section untuk script tambahan --}}

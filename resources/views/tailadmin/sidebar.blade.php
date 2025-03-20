@@ -589,7 +589,7 @@
                 </li>
                 <li>
                   <a
-                    href="badge.html"
+                    href="{{url('/ui/badge')}}"
                     class="menu-dropdown-item group"
                     :class="page === 'badge' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'"
                   >

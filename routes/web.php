@@ -61,6 +61,10 @@ Route::middleware([
     Route::get('/ui/avatar', function () {
         return view('tailadmin.ui.avatar');
     })->name('ui.avatar');
+
+    Route::get('/ui/badge', function () {
+        return view('tailadmin.ui.badge');
+    })->name('ui.badge');
 });
 
 Route::middleware(['auth'])->group(function () {

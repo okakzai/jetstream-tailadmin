@@ -5,9 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ $title ?? config('app.name', 'Laravel') }}</title>
+        <title>Profile - {{ config('app.name', 'Laravel') }}</title>
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ asset('template/tailadmin/style.css') }}">
+         <!-- Scripts -->
+         <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
+
+        <!-- Styles -->
+        <!-- @livewireStyles -->
     </head>
     <body
         x-data="{ page: '', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"

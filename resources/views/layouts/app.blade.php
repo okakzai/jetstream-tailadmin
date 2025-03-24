@@ -8,11 +8,6 @@
         <title>Profile - {{ config('app.name', 'Laravel') }}</title>
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ asset('template/tailadmin/style.css') }}">
-         <!-- Scripts -->
-         <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
-
-        <!-- Styles -->
-        <!-- @livewireStyles -->
     </head>
     <body
         x-data="{ page: '', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
@@ -55,7 +50,7 @@
         </div>
         <!-- ===== Page Wrapper End ===== -->
 
-        <!-- @stack('modals') -->
+        @stack('modals')
 
         <!-- @livewireScripts -->
         <!-- <script defer src="{{ asset('template/tailadmin/bundle.js') }}"></script> -->

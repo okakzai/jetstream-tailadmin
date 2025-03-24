@@ -18,6 +18,12 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
+
+    // Route::get('/user/profile', function () {
+    //     return view('tailadmin.jetstream.profile'); // Ganti dengan view yang diinginkan
+    // })->name('profile.show');
+    
+
     Route::get('/dashboard', function () {
         return view('tailadmin.dashboard');
     })->name('dashboard');

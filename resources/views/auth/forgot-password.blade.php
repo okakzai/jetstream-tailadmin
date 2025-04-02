@@ -1,4 +1,6 @@
+@section('title', 'Forgot Password')
 <x-guest-layout>
+<div class="relative flex flex-col justify-center w-full h-screen dark:bg-gray-900 sm:p-0 lg:flex-row">
     <x-authentication-card>
         <x-slot name="logo">
             <x-authentication-card-logo />
@@ -24,11 +26,15 @@
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-end mt-5">
                 <x-button>
                     {{ __('Email Password Reset Link') }}
                 </x-button>
             </div>
         </form>
+
+       
+
     </x-authentication-card>
+</div>
 </x-guest-layout>

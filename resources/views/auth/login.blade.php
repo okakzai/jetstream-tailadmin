@@ -1,3 +1,4 @@
+@section('title', 'Login')
 <x-guest-layout>
   
     <div class="relative flex flex-col justify-center w-full h-screen dark:bg-gray-900 sm:p-0 lg:flex-row">
